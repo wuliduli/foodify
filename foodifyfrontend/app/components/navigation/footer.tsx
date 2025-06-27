@@ -4,7 +4,7 @@ import "../../globals.css"
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#678164] p-5 text-center fixed bottom-0 left-0">
+        <footer className="w-full bg-[#678164] p-5 text-center fixed bottom-0 left-0 text-white">
             <div className="flex flex-row w-full items-start justify-center gap-18">
                 <div className={footerColumn}>
                     <p className="font-bold mt-0">&copy; {new Date().getFullYear()} Foodify</p>
