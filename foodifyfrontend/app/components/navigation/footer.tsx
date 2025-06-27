@@ -1,14 +1,37 @@
+import { footerColumn } from "../tailwind";
+import Link from 'next/link'
+import "../../globals.css"
+
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto text-center">
-                <p className="text-sm">
-                    &copy; {new Date().getFullYear()} Foodify
-                </p>
-                <p className="text-xs mt-2">
-                    Made with ❤️ by the Foodify Team
-                </p>
+        <footer className="w-full bg-[#678164] p-5 text-center fixed bottom-0 left-0">
+            <div className="flex flex-row w-full items-start justify-center gap-18">
+                <div className={footerColumn}>
+                    <p className="font-bold mt-0">&copy; {new Date().getFullYear()} Foodify</p>
+                    <p>Am Schwimmbad 3</p>
+                    <p>63322 Rödermark</p>
+                </div>
+                <div className={footerColumn}>
+                    <p className="font-bold mt-0">Kontakt</p>
+                    <p>Tel. : 1234567890</p>
+                    <p>Fax : 1234567890</p>
+                    <p>E-Mail: office@foodify.de</p>
+                </div>
+                <div className={footerColumn}>
+                    <p className="font-bold mt-0">Foodify</p>
+                    <p>Über uns</p>
+                    <p>Tutorial</p>
+                </div>
+                <div className={footerColumn}>
+                    <p className="font-bold mt-0">Rechtlich</p>
+                    <p>Impressum</p>
+                    <p>Datenschutz</p>
+                    <p>AGB</p>                    
+                </div>                
             </div>
         </footer>
     );
 }
+//            <div>
+//              <Link href="/"></Link>
+//           </div>

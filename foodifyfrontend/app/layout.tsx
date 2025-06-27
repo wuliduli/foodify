@@ -1,9 +1,10 @@
 import Welcome from "./page"
+import "./globals.css"
 import Footer from "./components/navigation/footer"
 
 export default function Home() {
   return (
-    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+    <main style={{fontFamily: 'sans-serif' }}>
         <html>
             <body>
               <Welcome/>
