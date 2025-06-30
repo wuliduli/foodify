@@ -1,10 +1,5 @@
-export default function Welcome()
-{
+export default function Welcome() {
     return (
-        <div>
-            <p>
-                Wilkommen zum foddify Uni Projekt!👋
-            </p>
-        </div>
+        <div><p>hello</p></div>
     );
 }
