@@ -1,9 +1,10 @@
-import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText } from "../tailwind";
+import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, generalPadding } from "../tailwind";
 import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
 
 export default function anmelden() {
   return (
-    <div className="flex flex-col justify-center min-h-screen md:pl-143 py-2">
+    <div className={generalPadding}>
       <div>
         <p className={header}>
           Anmelden
@@ -16,7 +17,7 @@ export default function anmelden() {
         <div>
           <form className={inputFieldEnvironmentColumn}>
             <label htmlFor="email" className={plainText}>E-Mail:</label>
-            <input type="email" id="email" name="email" className={inputField} required />
+            <Input className={inputField} placeholder="email..." />
           </form>
         </div>
       </div>
@@ -25,6 +26,7 @@ export default function anmelden() {
           <form className={inputFieldEnvironmentColumn}>
             <label htmlFor="password" className={plainText}>Passwort:</label>
             <input type="password" id="password" name="password" className={inputField} required />
+            <Input className={inputField} placeholder="passwort..." />
           </form>
         </div>
       </div>
