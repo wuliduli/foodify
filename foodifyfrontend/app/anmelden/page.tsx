@@ -1,9 +1,13 @@
+'use client'
 import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, generalPadding, subHeader, button } from "../tailwind";
 import { Button } from "../../components/ui/button";
 import Link from 'next/link'
 import { Input } from "../../components/ui/input";
+import { useRouter } from "next/navigation";
+
 
 export default function anmelden() {
+  const router = useRouter();
   return (
     <div className={generalPadding}>
       <div>
@@ -35,7 +39,8 @@ export default function anmelden() {
       </div>
       <div className="items-center">
         <Button
-          className={button}>
+          className={button}
+          onClick={() => router.push("/components/AngemeldetStartseite")}>
           Anmelden
         </Button>
       </div>

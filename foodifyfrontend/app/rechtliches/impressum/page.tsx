@@ -2,8 +2,8 @@ import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, g
 export default function impressum() {
     return (
         <div className={generalPadding}>
-            <div className={plainText}>
-            <p className={`${header} pb-10`}>Impressum</p>    
+            <div>
+            <p className={`${header}`}>Impressum</p>    
             <p>
                 Angaben gemäß § 5 DDG<br />
                 Tim Zimmermann - Student<br />
