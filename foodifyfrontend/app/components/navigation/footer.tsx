@@ -4,7 +4,7 @@ import "../../globals.css"
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#678164] p-5 text-center fixed bottom-0 left-0 text-white">
+        <footer className="w-full bg-[#678164] p-5 text-center bottom-0 left-0 text-white">
             <div className="flex flex-row w-full items-start justify-center gap-25">
                 <div className={footerColumn}>
                     <p className="font-bold mt-0">&copy; {new Date().getFullYear()} Foodify</p>
@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
                 <div className={footerColumn}>
                     <p className="font-bold mt-0">Rechtlich</p>
-                    <p>Impressum</p>
+                    <Link href="/rechtliches/impressum">Impressum</Link>
                     <p>Datenschutz</p>
                     <p>AGB</p>                    
                 </div>                
@@ -32,6 +32,3 @@ export default function Footer() {
         </footer>
     );
 }
-//            <div>
-//              <Link href="/"></Link>
-//           </div>

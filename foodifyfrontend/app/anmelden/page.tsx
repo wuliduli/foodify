@@ -1,5 +1,6 @@
-import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, generalPadding } from "../tailwind";
+import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, generalPadding, subHeader, button } from "../tailwind";
 import { Button } from "../../components/ui/button";
+import Link from 'next/link'
 import { Input } from "../../components/ui/input";
 
 export default function anmelden() {
@@ -25,19 +26,24 @@ export default function anmelden() {
         <div>
           <form className={inputFieldEnvironmentColumn}>
             <label htmlFor="password" className={plainText}>Passwort:</label>
-            <input type="password" id="password" name="password" className={inputField} required />
             <Input className={inputField} placeholder="passwort..." />
           </form>
         </div>
       </div>
       <div>
-        <p className={hintText}>passwort vergessen?</p>
+        <p className={`${hintText} text-blue-600 hover:underline cursor-pointer`}>passwort vergessen?</p>
       </div>
       <div className="items-center">
         <Button
-          className="bg-[#678164] hover:bg-[#8fc98a]">
+          className={button}>
           Anmelden
         </Button>
+      </div>
+      <div>
+        <p className={`${subHeader} pt-10` }>Noch keinen Account?</p>
+      </div>
+      <div>
+        <Link href="/registrieren"className={plainText}>Kein Problem! Hier gelangen sie zur registrierung..</Link>
       </div>
     </div>
   );
