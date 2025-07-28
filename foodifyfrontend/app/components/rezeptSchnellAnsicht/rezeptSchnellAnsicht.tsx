@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export default function RezeptSchnellAnsicht() {
   return (
+    <a href="/rezeptansicht">
     <div className="w-64 rounded-2xl shadow-lg bg-white overflow-hidden">
       <Image
         src="/rinderroulade.jpg" // Passe den Pfad ggf. an
@@ -30,6 +31,7 @@ export default function RezeptSchnellAnsicht() {
         </div>
       </div>
     </div>
+    </a>
   );
 }
 
