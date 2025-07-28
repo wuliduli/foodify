@@ -1,4 +1,4 @@
-import { generalPadding, inputFieldEnvironmentColumn, plainText, labelPadding, inputField, button } from "../tailwind";
+import { inputFieldEnvironmentColumn, plainText, labelPadding, inputField, button } from "../tailwind";
 import { Input } from "../../components/ui/input";
 import {
   Select,
@@ -16,7 +16,7 @@ import { FilterWithSearchbar } from "./popupWithSearch";
 
 export default function rezepterstellung() {
     return (
-        <div className={generalPadding}>
+        <div>
             <div>
                 <form className={inputFieldEnvironmentColumn}>
                     <label htmlFor="email" className={plainText}>Rezeptname:</label>

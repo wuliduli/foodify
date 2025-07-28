@@ -5,7 +5,7 @@ import { Input } from "../../components/ui/input";
 
 export default function registrieren() {
   return (
-    <div className={generalPadding}>
+    <div>
       <div>
         <p className={header}>
           Registrieren

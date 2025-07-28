@@ -8,7 +8,7 @@ export default function AngemeldetStartseite() {
     
     return (
         
-        <div className={generalPadding}>
+        <div>
             <div><p className={header}>Rezeptempfehlungen</p></div>
             <div><p className={subHeader}>Rezepte ausgewählt nach ihrem Geschmack</p></div>
             <div className={elementPadding}>

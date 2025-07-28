@@ -2,7 +2,7 @@ import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, g
 import RezeptSchnellAnsicht from "./components/rezeptSchnellAnsicht/rezeptSchnellAnsicht";
 export default function Homepage() {
     return (
-        <div className={generalPadding}>
+        <div>
             
             <div className="flex flex-row items-center justify-between gap-5">
                 <RezeptSchnellAnsicht />

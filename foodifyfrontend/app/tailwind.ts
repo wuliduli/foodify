@@ -10,5 +10,5 @@ export const buttonText="";
 export const button="bg-[#678164] hover:bg-[#8fc98a]";
 export const inputField="border p-2 rounded w-[300px]";
 export const inputFieldEnvironmentColumn="flex flex-col items-left justify-center space-y-1";
-export const generalPadding = "flex flex-col justify-start pt-[130px] pl-4 sm:pl-8 md:pl-[200px] lg:pl-[530px] max-w-[1335px]";
+export const generalPadding = "flex flex-col justify-start pt-[130px] pl-4 sm:pl-8 md:pl-[200px] lg:pl-[330px] max-w-[1335px]";
 export const elementPadding="pt-5 pb-5"

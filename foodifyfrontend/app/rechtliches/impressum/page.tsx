@@ -1,7 +1,7 @@
 import { header, plainText, inputField, inputFieldEnvironmentColumn, hintText, generalPadding, subHeader, button } from "../../tailwind";
 export default function impressum() {
     return (
-        <div className={generalPadding}>
+        <div>
             <div>
             <p className={`${header}`}>Impressum</p>    
             <p>

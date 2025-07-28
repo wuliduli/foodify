@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 export default function anmelden() {
   const router = useRouter();
   return (
-    <div className={generalPadding}>
+    <div>
       <div>
         <p className={header}>
           Anmelden
