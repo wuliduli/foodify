@@ -3,7 +3,7 @@ import { Button } from "../../components/ui/button";
 import Link from 'next/link'
 import { Input } from "../../components/ui/input";
 
-export default function anmelden() {
+export default function registrieren() {
   return (
     <div className={generalPadding}>
       <div>
