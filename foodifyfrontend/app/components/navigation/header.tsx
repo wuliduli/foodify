@@ -4,7 +4,7 @@ import { User } from "lucide-react"
 
 export default function Header() {
     return (
-        <header className="w-full bg-white p-5 text-center text-black fixed top-0 left-0 shadow-lg">
+        <header className="w-full bg-white p-5 text-center text-black fixed top-0 left-0 shadow-lg z-50">
             <div className="flex flex-row w-full items-center justify-center gap-20">
                 <div className="text-3xl font-semibold">
                     <Link href="/">Foodify</Link>
