@@ -15,13 +15,37 @@ export default function rezeptansicht() {
             <div>
                 <CarouselRezeptBilder />
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-row gap-5">
                 <div>
                     <Image
-                        src={Bild1}
+                        src={Bild2}
                         alt="Bild 1"
                         className="w-[200px] h-[200px] object-cover rounded-xl"
                     />
+                </div>
+                <div>
+                    <Image
+                        src={Bild3}
+                        alt="Bild 1"
+                        className="w-[200px] h-[200px] object-cover rounded-xl"
+                    />
+                </div>
+                <div>
+                    <Image
+                        src={Bild4}
+                        alt="Bild 1"
+                        className="w-[200px] h-[200px] object-cover rounded-xl"
+                    />
+                </div>
+            </div>
+            <div className="flex flex-row gap-5">
+                <div className="flex flex row items-center gap-3">
+                    <div>
+                        <p className={plainText}>Bewertung:</p>
+                    </div>
+                    <div>
+                        <p className={plainText}>$Beispiel</p>
+                    </div>
                 </div>
             </div>
         </div>

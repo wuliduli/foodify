@@ -16,7 +16,7 @@ import Bild4 from "./Italienische-Rinderrouladen4.png";
 
 export function CarouselRezeptBilder() {
   return (
-    <Carousel className="w-[650px] h-[600px]">
+    <Carousel className="w-[650px] h-[500px]">
       <CarouselContent>
         <CarouselItem>
           <Image
