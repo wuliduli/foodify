@@ -1,6 +1,6 @@
+"use client";
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -8,22 +8,45 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Image from "next/image";
+import Bild1 from "./Italienische-Rinderrouladen.png";
+import Bild2 from "./Italienische-Rinderrouladen2.png";
+import Bild3 from "./Italienische-Rinderrouladen3.png";
+import Bild4 from "./Italienische-Rinderrouladen4.png";
 
-export function CarouselDemo() {
+export function CarouselRezeptBilder() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <Carousel className="w-[650px] h-[600px]">
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
+        <CarouselItem>
+          <Image
+            src={Bild1}
+            alt="Bild 1"
+            
+            className="w-[650px] h-[450px] object-cover rounded-xl"
+          />
+        </CarouselItem>
+        <CarouselItem>
+          <Image
+            src={Bild2}
+            alt="Bild 2"
+            className="w-[650px] h-[450px] object-cover rounded-xl"
+          />
+        </CarouselItem>
+        <CarouselItem>
+          <Image
+            src={Bild3}
+            alt="Bild 3"
+            className="w-[650px] h-[450px] object-cover rounded-xl"
+          />
+        </CarouselItem>
+        <CarouselItem>
+          <Image
+            src={Bild4}
+            alt="Bild 3"
+            className="w-[650px] h-[450px] object-cover rounded-xl"
+          />
+        </CarouselItem>        
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
