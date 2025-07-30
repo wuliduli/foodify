@@ -4,6 +4,7 @@ import "../../globals.css"
 
 export default function Footer() {
     return (
+        <>
         <footer className="w-full bg-[#678164] p-5 text-center bottom-0 left-0 text-white">
             <div className="flex flex-row w-full items-start justify-center gap-25">
                 <div className={footerColumn}>
@@ -30,5 +31,7 @@ export default function Footer() {
                 </div>                
             </div>
         </footer>
+        
+        </>
     );
 }
