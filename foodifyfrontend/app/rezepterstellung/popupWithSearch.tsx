@@ -22,35 +22,59 @@ import {
 const frameworks = [
   {
     value: "1",
-    label: "Alle Schädlinge",
+    label: "Alle Zutaten",
   },
   {
     value: "2",
-    label: "Ratten",
+    label: "Eier",
   },
   {
     value: "3",
-    label: "Schaben",
+    label: "Kartoffeln",
   },
   {
     value: "4",
-    label: "Bettwanzen",
+    label: "Fleisch",
   },
   {
     value: "5",
-    label: "Tauben",
+    label: "Gemüse",
   },
-    {
+  {
     value: "6",
-    label: "Tauben",
+    label: "Mehl",
   },
-    {
+  {
     value: "7",
-    label: "Tauben",
+    label: "Zucker",
   },
-    {
+  {
     value: "8",
-    label: "Tauben",
+    label: "Salz",
+  },
+  {
+    value: "9",
+    label: "Milch",
+  },
+  {
+    value: "10",
+    label: "Eier",
+  },
+  {
+    value: "11",
+    label: "Butter",
+  },
+  {
+    value: "12",
+    label: "Öl",
+  },
+  {
+    value: "13",
+    label: "Wasser",
+  },
+  {
+    value: "14",
+    label: "Hefe",
   },
 ]
 

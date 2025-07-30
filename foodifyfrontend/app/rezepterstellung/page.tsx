@@ -1,4 +1,4 @@
-import { inputFieldEnvironmentColumn, plainText, labelPadding, inputField, button, elementPadding } from "../tailwind";
+import { inputFieldEnvironmentColumn, plainText, labelPadding, inputField, button, elementPadding, header } from "../tailwind";
 import { Input } from "../../components/ui/input";
 import { SelectFieldPortionen, SelectFieldDauer } from "./selectPopUp"
 import { Button } from "../../components/ui/button";
@@ -10,6 +10,9 @@ import { FilterWithSearchbar } from "./popupWithSearch";
 export default function rezepterstellung() {
     return (
         <div>
+            <div className="pb-10">
+                <h2 className={header}>Rezept erstellen</h2>
+            </div>
             <div>
                 <form className={inputFieldEnvironmentColumn}>
                     <label htmlFor="email" className={plainText}>Rezeptname:</label>
@@ -20,7 +23,7 @@ export default function rezepterstellung() {
                 <form className={inputFieldEnvironmentColumn}>
 
                     <label htmlFor="email" className={`${plainText} ${labelPadding}`}>Uploaden sie ihre Rezeptbilder::</label>
-                    <div className="flex flex-row gap-5">
+                    <div className="flex flex-row gap-5 items-center">
                         <div className="items-center">
                             <Button
                                 className={button}>
@@ -28,8 +31,11 @@ export default function rezepterstellung() {
                                     <Upload className="w-6 h-6 inline-block" />
                                 </div>
                             </Button>
+                            
                         </div>
-                        <p>50 MB Limit</p>
+                        <div>
+                            <p>50 MB Limit</p>
+                        </div>
                     </div>
                 </form>
             </div>
